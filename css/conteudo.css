@@ -1,0 +1,1099 @@
+/* ==========================
+   ESTILO GERAL
+========================== */
+
+*{
+    
+    margin:0;
+    
+    padding:0;
+    
+    box-sizing:border-box;
+}
+
+body{
+    
+    background:#FFD400;
+
+    font-family:"Trebuchet MS", Arial, sans-serif;
+
+    color:#111;
+}
+
+main{
+    
+    max-width:1000px;
+
+    margin:40px auto;
+
+    padding:0 20px;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+header{
+    
+    padding:20px 20px 20px 0px;
+
+}
+
+.faixa-titulo-borda{
+    
+    display:inline-block;
+
+    background: #111;
+
+    padding:5px;
+
+    margin-bottom:20px;
+
+    clip-path:polygon(0 0,100% 0,92% 100%,0 100%);
+
+}
+
+.faixa-titulo{
+    
+    background: #111;
+
+    padding:10px 110px 10px 25px;
+
+    clip-path:polygon(0 0,100% 0,92% 100%,0 100%);
+}
+
+.titulo-pagina{
+    
+    margin:0;
+
+    color: #FFF;
+
+    font-family:"Arial Black",sans-serif;
+
+    font-size:3.2rem;
+
+    font-style:italic;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+/* ==========================
+   NAVEGAÇÃO
+========================== */
+
+nav {
+    
+    padding: 0 15px;
+    
+}
+
+nav a{
+    
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:30%;
+
+    min-height:75px;
+
+    background:#FFF;
+
+    color:#111;
+
+    border:5px solid #111;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:1.15rem;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    box-shadow:8px 8px 0 #111;
+
+    cursor:pointer;
+
+    transition:
+        background .2s,
+        color .2s,
+        transform .2s,
+        box-shadow .2s;
+}
+
+nav a:hover{
+    
+    background:#111;
+
+    color:#FFD400;
+
+    transform:translate(-4px,-4px);
+
+    box-shadow:12px 12px 0 #111;
+}
+
+nav a:active{
+    
+    transform:translate(8px,8px);
+
+    box-shadow:0 0 0 #111;
+}
+
+/* ==========================
+   QUADROS
+========================== */
+
+.quadro-explicacao-1,
+.quadro-explicacao-2,
+.quadro-explicacao-3,
+.quadro-explicacao-4,
+.quadro-explicacao-5,
+.quadro-explicacao-6,
+.quadro-explicacao-7,
+
+.quadro-instrucao,
+
+.quadro-orientacao,
+
+.quadro-exercicio{
+    
+    background:#FFF;
+
+    border:5px solid #111;
+
+    border-radius:10px;
+
+    box-shadow:8px 8px 0 #111;
+
+    padding:35px;
+
+    margin-bottom:45px;
+}
+
+/* ==========================
+   TÍTULOS DOS QUADROS
+========================== */
+
+.quadro-explicacao-1 h2,
+.quadro-explicacao-2 h2,
+.quadro-explicacao-3 h2,
+.quadro-explicacao-4 h2,
+.quadro-explicacao-5 h2,
+.quadro-explicacao-6 h2,
+.quadro-explicacao-7 h2,
+
+.quadro-explicacao-1 h3,
+.quadro-explicacao-2 h3,
+.quadro-explicacao-3 h3,
+.quadro-explicacao-4 h3,
+.quadro-explicacao-5 h3,
+.quadro-explicacao-6 h3,
+.quadro-explicacao-7 h3,
+
+.quadro-instrucao h2,
+
+.quadro-orientacao h2,
+
+.quadro-exercicio h2{
+
+    display:inline-block;
+
+    background:#111;
+
+    color:#FFD400;
+
+    padding:25px 30px;
+
+    margin-bottom:10px;
+
+    font-family:"Arial Black",sans-serif;
+
+    font-size:1.5rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    clip-path:polygon(5% 0,100% 0,95% 100%,0 100%);
+}
+
+.quadro-explicacao-1 h3,
+.quadro-explicacao-2 h3,
+.quadro-explicacao-3 h3,
+.quadro-explicacao-4 h3,
+.quadro-explicacao-5 h3,
+.quadro-explicacao-6 h3,
+.quadro-explicacao-7 h3 {
+    
+    margin-top:30px;
+}
+
+.quadro-exercicio h2 {
+  
+  margin-bottom:30px;
+    
+}
+
+/* ==========================
+   PARÁGRAFOS
+========================== */
+
+.quadro-explicacao-1 p,
+.quadro-explicacao-2 p,
+.quadro-explicacao-3 p,
+.quadro-explicacao-4 p,
+.quadro-explicacao-5 p,
+.quadro-explicacao-6 p,
+.quadro-explicacao-7 p,
+
+.quadro-instrucao p,
+
+.quadro-orientacao p,
+
+.quadro-exercicio p{
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    color:#111;
+
+    margin:18px 0;
+
+    text-align:left;
+}
+
+/* ==========================
+   TEXTO EM DESTAQUE
+========================== */
+
+strong{
+    
+    color:#111;
+    
+    background:none;
+    
+    padding:0;
+    
+    transform:none;
+    
+    font-weight:1000;
+}
+
+/* ==========================
+   LISTAS
+========================== */
+
+ul{
+    
+    list-style-type: square;
+}
+
+ul li::marker{
+    
+    color: #111;
+    
+    font-size:1.5em;
+}
+
+.quadro-explicacao-1 ul,
+.quadro-explicacao-2 ul,
+.quadro-explicacao-3 ul,
+.quadro-explicacao-4 ul,
+.quadro-explicacao-5 ul,
+.quadro-explicacao-6 ul,
+.quadro-explicacao-7 ul,
+
+.quadro-instrucao ul,
+
+.quadro-orientacao ul{
+
+    margin-top:20px;
+
+    margin-left:20px;
+}
+
+.quadro-explicacao-1 li,
+.quadro-explicacao-2 li,
+.quadro-explicacao-3 li,
+.quadro-explicacao-4 li,
+.quadro-explicacao-5 li,
+.quadro-explicacao-6 li,
+.quadro-explicacao-7 li,
+
+.quadro-instrucao li,
+
+.quadro-orientacao li{
+
+    font-size:1.1rem;
+
+    margin-bottom:16px;
+
+    line-height:1.7;
+}
+
+/* ==========================
+   EXEMPLO
+========================== */
+
+.example{
+    
+    display:block;
+
+    width:max-content;
+
+    max-width:100%;
+
+    margin:25px 0px;
+
+    padding:15px 25px;
+    
+    color: white !important;
+
+    background:#111;
+
+    border-radius:10px;
+
+    font-family:"Arial Black",sans-serif;
+
+    font-size:1.5rem;
+
+    text-align:center;
+}
+
+.example strong {
+    
+    color: white !important;
+}
+
+/* ==========================
+   EXERCÍCIOS
+========================== */
+
+.quadro-exercicio ol{
+
+    list-style:none;
+
+    counter-reset:questao;
+
+    padding:0;
+}
+
+.quadro-exercicio ol li{
+
+    counter-increment:questao;
+
+    position:relative;
+
+    background:#FFD400;
+
+    border:4px solid #111;
+
+    border-radius:10px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+}
+
+/* ==========================
+   NÚMERO DA QUESTÃO
+========================== */
+
+.titulo-questao{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+    
+    padding:15px;
+    
+    width: 100%;
+}
+
+.numero{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    color:#FFD400;
+
+    border:4px solid #111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:"Arial Black",sans-serif;
+
+    font-size:1.2rem;
+
+    flex-shrink:0;
+}
+
+.titulo-questao .pergunta{
+
+    margin:0;
+
+    background:#111;
+
+    color:#FFF;
+
+    min-height:45px;
+
+    padding:0 20px;
+
+    border-radius:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    font-size:1.3rem;
+
+    font-family:"Arial Black",sans-serif;
+
+    flex:1;
+}
+
+/* ==========================
+   PERGUNTA
+========================== */
+
+.pergunta{
+
+    font-size:1.3rem;
+
+    font-weight:900;
+
+    margin-bottom:25px;
+
+    line-height:1.5;
+}
+
+/* ==========================
+   ALTERNATIVAS
+========================== */
+
+label {
+    
+    display: flex;
+    
+    align-items: center;
+    
+    color: #FFF;
+    
+    background: #111;
+    
+    border-radius: 8px;
+    
+    padding:14px 18px;
+    
+    margin: 12px 0;
+    
+    cursor: pointer;
+    
+    transition: .2s;
+    
+    font-size: 1.1rem;
+    
+    font-weight: 700;
+    
+    text-indent:10px;
+}
+
+label:hover{
+    
+    color:#FFD400;
+
+    background:#111;
+
+    transform:translateX(6px);
+}
+
+/* ==========================
+   RADIO
+========================== */
+
+input[type="radio"]{
+    
+    appearance:none;
+    -webkit-appearance:none;
+
+    width:20px;
+    height:20px;
+
+    border:3px solid #111;
+
+    border-radius:50%;
+
+    background:#FFF;
+
+    cursor:pointer;
+
+    margin-right:12px;
+
+    vertical-align:middle;
+
+    position:relative;
+    
+    top:0;
+}
+
+
+input[type="radio"]:checked{
+    
+    border:2px solid #111;
+    
+    background:
+        radial-gradient(circle, #111 40%, #FFD400 42%);
+}
+
+/* ==========================
+   RESPOSTAS
+========================== */
+
+[id^="resp"] {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 10px 0 5px;
+
+    padding: 18px 25px;
+
+    background: #111;
+
+    border-radius: 10px;
+
+    font-family: "Arial Black", sans-serif;
+
+    font-size: 1.1rem;
+
+    font-weight: 900;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    color: #FFF;
+}
+
+
+/* VOCÊ ACERTOU / VOCÊ ERROU */
+
+[id^="resp"] strong {
+
+    display: block;
+
+    margin: 0 0 5px;
+
+    font-family: "Arial Black", sans-serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 900;
+
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+/* ACERTOU */
+
+[id^="resp"].correta strong {
+
+    color: #00C853 !important;
+
+}
+
+
+/* ERROU */
+
+[id^="resp"].incorreta strong {
+
+    color: #FF1744 !important;
+
+}
+
+
+/* TEXTO DA RESPOSTA */
+
+[id^="resp"].correta,
+[id^="resp"].incorreta {
+
+    color: #FFF;
+
+    text-align: center;
+}
+
+
+/* ESCONDE QUANDO ESTÁ VAZIO */
+
+[id^="resp"]:empty {
+
+    display: none;
+}
+
+/* ==========================
+   BOTÕES
+========================== */
+
+button{
+
+    background:#111;
+
+    color:#FFF;
+    
+    border:5px solid #111;
+    
+    border-radius:8px;
+
+    padding:16px 30px;
+
+    margin:10px 15px 0 0;
+
+    font-family:"Arial Black",sans-serif;
+
+    font-size:1rem;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+button:hover{
+
+    background:#111;
+
+    color:#FFD400;
+
+    transform:translate(4px,4px);
+}
+
+/* ==========================
+   RESULTADO
+========================== */
+
+#resultado {
+    
+    display: block;
+    
+    width: 100%;
+    
+    margin: 35px 0 25px;
+    
+    padding: 25px 20px;
+    
+    background: #111;
+    
+    border: 5px solid #111;
+    
+    border-radius: 10px;
+    
+    color: #FFD400;
+    
+    font-family: "Arial Black", sans-serif;
+    
+    font-size: 1.8rem;
+    
+    font-weight: 900;
+    
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+#resultado:empty {
+    
+    display: none;
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#111;
+
+    padding:30px 20px;
+
+    text-align:center;
+}
+
+footer p{
+
+    margin:0;
+
+    color:#FFF;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    line-height:1.7;
+}
+
+/* ==========================
+   ESTILIZAÇÃO DO MODAL
+========================== */
+
+.modal {
+    
+    display: none;
+
+    position: fixed;
+    
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.modal.aberto {
+    
+    display: flex;
+}
+
+.modal-conteudo {
+    
+    width: 90%;
+    
+    max-width: 350px;
+
+    background: #FFF;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+
+    animation: aparecer .25s;
+}
+
+.modal-conteudo h2 {
+
+    color: #FFD400;
+
+    background: #111;
+
+    display: inline-block;
+
+    padding: 2px 30px;
+
+    margin-top: 0;
+
+    clip-path: polygon(
+        5% 0,
+        100% 0,
+        95% 100%,
+        0 100%
+    );
+}
+
+.modal-conteudo p {
+
+    margin: 20px 0;
+
+    font-size: 20px;
+}
+
+.modal-conteudo button {
+
+    width: 100%;
+
+    display: inline-block;
+
+    margin: 10px auto 0;
+    
+    padding: 10px 25px;
+    
+    background: #111;
+
+    color: #FFF;
+
+    border: none;
+    
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.modal-conteudo button:hover {
+
+    background: #111;
+
+    color: #FFD400;
+}
+
+
+/* ==========================
+   ANIMAÇÃO DO MODAL
+========================== */
+
+@keyframes aparecer {
+
+    from {
+
+        transform: scale(.8);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width:600px){
+
+    main{
+        
+        margin:25px auto;
+        
+        padding:0 20px;
+    }
+
+    .faixa-titulo{
+        
+        padding:10px 45px 10px 15px;
+    }
+
+    .titulo-pagina{
+        
+        font-size:2rem;
+    }
+
+    nav{
+        
+        padding:0 18px 20px;
+    }
+
+    nav a{
+        
+        width:100%;
+        
+        min-height:60px;
+        
+        font-size:1rem;
+        
+        box-shadow:6px 6px 0 #111;
+    }
+
+    .quadro-explicacao-1,
+    .quadro-explicacao-2,
+    .quadro-explicacao-3,
+    .quadro-explicacao-4,
+    .quadro-explicacao-5,
+    .quadro-explicacao-6,
+    .quadro-explicacao-7,
+    
+    .quadro-instrucao,
+    
+    .quadro-orientacao,
+    
+    .quadro-exercicio{
+        
+        width:100%;
+        
+        padding:18px;
+        
+        margin-bottom:25px;
+        
+        box-sizing:border-box;
+    }
+
+    .quadro-explicacao-1 h2,
+    .quadro-explicacao-2 h2,
+    .quadro-explicacao-3 h2,
+    .quadro-explicacao-4 h2,
+    .quadro-explicacao-5 h2,
+    .quadro-explicacao-6 h2,
+    .quadro-explicacao-7 h2,
+
+    .quadro-explicacao-1 h3,
+    .quadro-explicacao-2 h3,
+    .quadro-explicacao-3 h3,
+    .quadro-explicacao-4 h3,
+    .quadro-explicacao-5 h3,
+    .quadro-explicacao-6 h3,
+    .quadro-explicacao-7 h3,
+    
+    .quadro-instrucao h2,
+    
+    .quadro-orientacao h2,
+    
+    .quadro-exercicio h2{
+        
+        font-size:1rem;
+        
+        padding:10px 30px;
+    }
+
+    .quadro-explicacao-1 p,
+    .quadro-explicacao-2 p,
+    .quadro-explicacao-3 p,
+    .quadro-explicacao-4 p,
+    .quadro-explicacao-5 p,
+    .quadro-explicacao-6 p,
+    .quadro-explicacao-7 p,
+    
+    .quadro-instrucao p,
+    
+    .quadro-orientacao p,
+    
+    .quadro-exercicio p{
+        
+        font-size:1rem;
+        
+        line-height:1.6;
+    }
+
+    .quadro-explicacao-1 li,
+    .quadro-explicacao-2 li,
+    .quadro-explicacao-3 li,
+    .quadro-explicacao-4 li,
+    .quadro-explicacao-5 li,
+    .quadro-explicacao-6 li,
+    .quadro-explicacao-7 li,
+    
+    .quadro-instrucao li,
+    
+    .quadro-orientacao li{
+        
+        font-size:1rem;
+    }
+
+    .quadro-exercicio ol li{
+        
+        padding:20px 15px;
+    }
+
+    .titulo-questao{
+        
+        gap:10px;
+        
+        margin-bottom:18px;
+    }
+
+    .numero{
+        
+        width:36px;
+        
+        height:36px;
+        
+        font-size:.95rem;
+        
+        border-width:3px;
+    }
+
+    .titulo-questao .pergunta{
+        
+        font-size:1rem;
+        
+        padding:10px 12px;
+    }
+
+    .pergunta{
+        
+        font-size:1.05rem;
+        
+        margin-bottom:18px;
+    }
+
+    label{
+        
+        font-size:1rem;
+        
+        padding:12px;
+    }
+
+    input[type="radio"]{
+        
+        transform:scale(1.2);
+    }
+
+    button{
+        
+        width:100%;
+        
+        margin:10px 0;
+        
+        font-size:.95rem;
+        
+        padding:14px;
+    }
+
+    #resultado{
+        
+        font-size:1.5rem;
+        
+        margin-top:25px;
+    }
+
+    footer{
+        
+        padding:20px 15px;
+    }
+
+    footer p{
+        
+        font-size:.9rem;
+    }
+}

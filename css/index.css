@@ -1,0 +1,201 @@
+/* ==========================
+   ESTILO GERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#FFD60A;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main{
+    max-width:900px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+/* ==========================
+   TÍTULO
+========================== */
+
+.happy-math{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.happy-math-titulo{
+    margin:0;
+    line-height:.9;
+    font-family:"Bungee","Arial Black",sans-serif;
+}
+
+.happy-titulo{
+    display:block;
+    font-size:clamp(100px,18vw,200px);
+    letter-spacing:-2px;
+    color:#0056C9;
+    -webkit-text-stroke:3px #111;
+    text-shadow:4px 4px 0 rgba(0,0,0,.25);
+}
+
+.math-titulo{
+    display:block;
+    margin-top:8px;
+    font-size:clamp(90px,16vw,190px);
+    letter-spacing:-2px;
+    color:#D62828;
+    -webkit-text-stroke:3px #111;
+    text-shadow:4px 4px 0 rgba(0,0,0,.25);
+}
+
+/* ==========================
+   BOAS-VINDAS
+========================== */
+
+.boas-vindas{
+    background:#FFF;
+    border:5px solid #111;
+    border-radius:8px;
+    box-shadow:10px 10px 0 #111;
+    padding:25px;
+    margin:20px auto 50px;
+}
+
+.boas-vindas h2{
+    display:inline-block;
+    background:#111;
+    color:#FFD60A;
+    padding:8px 28px;
+    margin-bottom:20px;
+    font-family:"Arial Black",sans-serif;
+    font-size:1rem;
+    text-transform:uppercase;
+    clip-path:polygon(5% 0,100% 0,95% 100%,0 100%);
+}
+
+.boas-vindas p{
+    margin:18px 0;
+    color:#111;
+    font-size:1.2rem;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-weight:700;
+    line-height:1.8;
+    text-align:left;
+}
+
+/* ==========================
+   MENU
+========================== */
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(2,350px);
+    justify-content:center;
+    gap:25px;
+    margin:50px auto;
+}
+
+/* ==========================
+   PRIMEIRO BOTÃO
+========================== */
+
+.botao:first-child{
+    grid-column:1 / 3;
+    justify-self:center;
+    width:350px;
+}
+
+.botao{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    min-height:75px;
+    background:#FFF;
+    color:#111;
+    border:5px solid #111;
+    border-radius:8px;
+    text-decoration:none;
+    text-align:center;
+    font-size:1.15rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    box-shadow:8px 8px 0 #111;
+    cursor:pointer;
+    transition:
+        background .2s,
+        color .2s,
+        transform .2s,
+        box-shadow .2s;
+}
+
+.botao:hover{
+    background:#111;
+    color:#FFD400;
+    transform:translate(-4px,-4px);
+    box-shadow:12px 12px 0 #111;
+}
+
+.botao:active{
+    transform:translate(8px,8px);
+    box-shadow:0 0 0 #111;
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+footer{
+    margin-top:60px;
+    padding:30px 20px;
+    background:#111;
+    text-align:center;
+}
+
+footer p{
+    color:#FFF;
+    font-size:1rem;
+    font-weight:bold;
+    line-height:1.6;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width:600px){
+
+    .menu{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .botao:first-child{
+        grid-column:auto;
+        width:100%;
+    }
+
+    .botao{
+        min-height:65px;
+        font-size:1rem;
+    }
+
+    .boas-vindas{
+        padding:20px;
+    }
+
+    .boas-vindas p{
+        font-size:1.05rem;
+        text-align:left;
+    }
+
+    footer{
+        padding:25px 15px;
+    }
+}

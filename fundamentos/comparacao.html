@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Math - Comparação de Números</title>
+    <link rel="stylesheet" href="../css/conteudo.css">
+</head>
+
+<body>
+
+<header>
+    <div class="faixa-titulo-borda">
+        <div class="faixa-titulo">
+            <h1 class="titulo-pagina">Comparação de Números</h1>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="../index.html">Página Inicial</a>
+</nav>
+
+<main>
+
+<section class="quadro-explicacao-1">
+
+    <h2>Como funciona a comparação de números?</h2>
+
+    <p>Comparar números significa observar dois ou mais números para descobrir
+        qual deles é <strong>maior</strong>, qual é <strong>menor</strong> ou
+        se eles são <strong>iguais</strong>.</p>
+
+    <p>Podemos comparar números pensando nas quantidades que eles representam.</p>
+
+    <p>Por exemplo, o número <strong>8</strong> representa uma quantidade maior
+        do que o número <strong>5</strong>.</p>
+
+    <p class="example">8 > 5</p>
+
+    <p>Isso significa que <strong>8 é maior que 5</strong>.</p>
+
+</section>
+
+
+<section class="quadro-explicacao-2">
+
+    <h2>Maior que</h2>
+
+    <p>Quando um número representa uma quantidade maior do que outro, usamos
+        o símbolo <strong>></strong>.</p>
+
+    <p>O símbolo <strong>></strong> significa
+        <strong>maior que</strong>.</p>
+
+    <p>Observe:</p>
+
+    <p class="example">7 > 4</p>
+
+    <p>Podemos ler essa comparação assim:</p>
+
+    <p><strong>7 é maior que 4.</strong></p>
+
+    <p>Isso acontece porque 7 representa uma quantidade maior do que 4.</p>
+
+</section>
+
+
+<section class="quadro-explicacao-3">
+
+    <h2>Menor que</h2>
+
+    <p>Quando um número representa uma quantidade menor do que outro, usamos
+        o símbolo <strong><</strong>.</p>
+
+    <p>O símbolo <strong><</strong> significa
+        <strong>menor que</strong>.</p>
+
+    <p>Observe:</p>
+
+    <p class="example">3 < 8</p>
+
+    <p>Podemos ler essa comparação assim:</p>
+
+    <p><strong>3 é menor que 8.</strong></p>
+
+    <p>Isso acontece porque 3 representa uma quantidade menor do que 8.</p>
+
+</section>
+
+
+<section class="quadro-explicacao-4">
+
+    <h2>Igualdade</h2>
+
+    <p>Quando dois números representam a mesma quantidade, usamos o símbolo
+        <strong>=</strong>.</p>
+
+    <p>O símbolo <strong>=</strong> significa
+        <strong>igual a</strong>.</p>
+
+    <p>Observe:</p>
+
+    <p class="example">6 = 6</p>
+
+    <p>Podemos ler essa comparação assim:</p>
+
+    <p><strong>6 é igual a 6.</strong></p>
+
+    <p>Os dois números possuem o mesmo valor, por isso usamos o sinal de
+        igualdade.</p>
+
+    <h3>Dica</h3>
+
+    <p>Uma maneira fácil de lembrar dos símbolos
+        <strong>></strong> e <strong><</strong> é imaginar uma boca.</p>
+
+    <p>A boca fica sempre <strong>aberta para o número maior</strong>.</p>
+
+    <p class="example">9 > 2</p>
+
+    <p class="example">2 < 9</p>
+
+</section>
+
+
+<section class="quadro-instrucao">
+
+    <h2>Instruções</h2>
+
+    <ul>
+        <li>Há 10 exercícios para você praticar.</li>
+
+        <li>Leia cada pergunta com atenção.</li>
+
+        <li>Observe os números antes de escolher uma resposta.</li>
+
+        <li>Marque apenas uma resposta em cada questão.</li>
+
+        <li>Quando terminar, clique em Ver Resultado para conferir seus acertos.</li>
+
+        <li>Se quiser praticar novamente, clique em Tentar Novamente.</li>
+    </ul>
+
+</section>
+
+
+<section class="quadro-orientacao">
+
+    <h2>Orientações</h2>
+
+    <ul>
+        <li>Se tiver alguma dúvida, volte e leia as explicações novamente.</li>
+
+        <li>Você pode usar desenhos ou objetos para ajudar a comparar as
+            quantidades.</li>
+
+        <li>Lembre-se: <strong>></strong> significa maior,
+            <strong><</strong> significa menor e
+            <strong>=</strong> significa igual.</li>
+
+        <li>Não se preocupe se errar. Os erros também fazem parte do
+            aprendizado.</li>
+
+        <li>Pratique quantas vezes precisar.</li>
+    </ul>
+
+</section>
+
+
+<section class="quadro-exercicio">
+
+    <h2>Exercícios</h2>
+
+    <ol>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">1</span>
+                <p class="pergunta">Qual número é maior: 5 ou 8?</p>
+            </div>
+
+            <label><input type="radio" name="q1">5</label>
+            <label><input type="radio" name="q1" data-correta="true">8</label>
+        </li>
+
+        <p id="resp1"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">2</span>
+                <p class="pergunta">Qual número é menor: 3 ou 7?</p>
+            </div>
+
+            <label><input type="radio" name="q2" data-correta="true">3</label>
+            <label><input type="radio" name="q2">7</label>
+        </li>
+
+        <p id="resp2"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">3</span>
+                <p class="pergunta">Complete o espaço entre os números: 8 ___ 5</p>
+            </div>
+
+            <label><input type="radio" name="q3" data-correta="true">></label>
+            <label><input type="radio" name="q3"><</label>
+            <label><input type="radio" name="q3">=</label>
+        </li>
+
+        <p id="resp3"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">4</span>
+                <p class="pergunta">Complete o espaço entre os números: 2 ___ 6</p>
+            </div>
+
+            <label><input type="radio" name="q4">></label>
+            <label><input type="radio" name="q4" data-correta="true"><</label>
+            <label><input type="radio" name="q4">=</label>
+        </li>
+
+        <p id="resp4"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">5</span>
+                <p class="pergunta">Complete o espaço entre os números: 4 ___ 4</p>
+            </div>
+
+            <label><input type="radio" name="q5">></label>
+            <label><input type="radio" name="q5"><</label>
+            <label><input type="radio" name="q5" data-correta="true">=</label>
+        </li>
+
+        <p id="resp5"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">6</span>
+                <p class="pergunta">Qual número é maior: 9 ou 4?</p>
+            </div>
+
+            <label><input type="radio" name="q6">4</label>
+            <label><input type="radio" name="q6" data-correta="true">9</label>
+        </li>
+
+        <p id="resp6"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">7</span>
+                <p class="pergunta">Qual número é menor: 2 ou 5?</p>
+            </div>
+
+            <label><input type="radio" name="q7" data-correta="true">2</label>
+            <label><input type="radio" name="q7">5</label>
+        </li>
+
+        <p id="resp7"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">8</span>
+                <p class="pergunta">Complete o espaço entre os números: 7 ___ 7</p>
+            </div>
+
+            <label><input type="radio" name="q8">></label>
+            <label><input type="radio" name="q8"><</label>
+            <label><input type="radio" name="q8" data-correta="true">=</label>
+        </li>
+
+        <p id="resp8"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">9</span>
+                <p class="pergunta">Complete o espaço entre os números: 10 ___ 6</p>
+            </div>
+
+            <label><input type="radio" name="q9" data-correta="true">></label>
+            <label><input type="radio" name="q9"><</label>
+            <label><input type="radio" name="q9">=</label>
+        </li>
+
+        <p id="resp9"></p>
+
+        <li>
+            <div class="titulo-questao">
+                <span class="numero">10</span>
+                <p class="pergunta">Complete o espaço entre os números: 3 ___ 9</p>
+            </div>
+
+            <label><input type="radio" name="q10">></label>
+            <label><input type="radio" name="q10" data-correta="true"><</label>
+            <label><input type="radio" name="q10">=</label>
+        </li>
+
+        <p id="resp10"></p>
+
+    </ol>
+
+    <div id="resultado"></div>
+
+    <button onclick="corrigir()">Ver Resultado</button>
+    <button onclick="reiniciar()">Tentar Novamente</button>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>© 2026 Happy Math. Um projeto educativo criado para ajudar crianças
+        a aprender matemática de forma simples, divertida e interativa.
+        Sem fins lucrativos.</p>
+
+</footer>
+
+<div id="modal" class="modal">
+
+    <div class="modal-conteudo">
+
+        <h2>⚠ Atenção</h2>
+
+        <p id="mensagemModal"></p>
+
+        <button onclick="fecharModal()">OK</button>
+
+    </div>
+
+</div>
+
+<script src="../js/fundamentos/comparacao.js"></script>
+
+</body>
+</html>
