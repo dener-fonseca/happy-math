@@ -35,12 +35,12 @@ main{
 
 header{
     
-    padding:20px 0;
+   padding:20px 0;
 }
 
 .faixa-titulo-borda{
     
-    display:inline-block;
+   display:inline-block;
 
     background:#111;
 
@@ -58,9 +58,9 @@ header{
 
 .faixa-titulo{
     
-    background:#111;
+   background:#111;
 
-    padding:10px 110px 10px 25px;
+    padding:10px 30px 10px 25px;
 
     clip-path:polygon(
         0 0,
@@ -72,13 +72,13 @@ header{
 
 .titulo-pagina{
     
-    margin:0;
+   margin:0;
 
     color:#FFF;
 
     font-family:"Arial Black",sans-serif;
 
-    font-size:5.2rem;
+    font-size:3.2rem;
 
     font-style:italic;
 
