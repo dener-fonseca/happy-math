@@ -20,13 +20,15 @@ body{
     color:#111;
 }
 
-main{
+main {
     
-    max-width:1000px;
-
-    margin:40px auto;
-
-    padding:0 20px;
+    width: 100%;
+    
+    max-width: none;
+    
+    margin: 40px 0;
+    
+    padding: 0 40px;
 }
 
 /* ==========================
@@ -35,39 +37,39 @@ main{
 
 header{
     
-   padding:20px 0;
+    padding:20px 40px;
 }
 
 .faixa-titulo-borda{
     
-   display:inline-block;
+    display:inline-block;
 
-   background:#111;
+    background:#111;
 
-   padding:5px;
+    padding:5px;
 
-   margin-bottom:20px;
+    margin-bottom:20px;
 
-   clip-path:polygon(
-      0 0,
-      100% 0,
-      92% 100%,
-      0 100%
+    clip-path:polygon(
+        0 0,
+        100% 0,
+        92% 100%,
+        0 100%
     );
 }
 
 .faixa-titulo{
     
-   background:#111;
+    background:#111;
 
-   padding:10px 80px 10px 25px;
+    padding:10px 80px 10px 25px;
 
-   clip-path:polygon(
-      0 0,
-      100% 0,
-      92% 100%,
-      0 100%
-   );
+    clip-path:polygon(
+        0 0,
+        100% 0,
+        92% 100%,
+        0 100%
+    );
 }
 
 .titulo-pagina{
@@ -95,7 +97,7 @@ header{
 
 nav{
     
-    padding:0 20px 20px;
+    padding:0 40px 20px;
 }
 
 nav a{
@@ -176,6 +178,10 @@ nav a:active{
 .quadro-orientacao,
 
 .quadro-exercicio{
+    
+    width:100%;
+    
+    max-width:1200px;
     
     background:#FFF;
 
@@ -1103,4 +1109,4 @@ footer p{
         
         font-size:.9rem;
     }
-}
+   }
