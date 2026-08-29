@@ -42,17 +42,17 @@ header{
     
    display:inline-block;
 
-    background:#111;
+   background:#111;
 
-    padding:5px;
+   padding:5px;
 
-    margin-bottom:20px;
+   margin-bottom:20px;
 
-    clip-path:polygon(
-        0 0,
-        100% 0,
-        92% 100%,
-        0 100%
+   clip-path:polygon(
+      0 0,
+      100% 0,
+      92% 100%,
+      0 100%
     );
 }
 
@@ -60,19 +60,19 @@ header{
     
    background:#111;
 
-    padding:10px 80px 10px 25px;
+   padding:10px 80px 10px 25px;
 
-    clip-path:polygon(
-        0 0,
-        100% 0,
-        92% 100%,
-        0 100%
-    );
+   clip-path:polygon(
+      0 0,
+      100% 0,
+      92% 100%,
+      0 100%
+   );
 }
 
 .titulo-pagina{
     
-   margin:0;
+    margin:0;
 
     color:#FFF;
 
@@ -222,7 +222,7 @@ nav a:active{
 
     color:#FFD400;
 
-    padding:25px 30px;
+    padding:20px 30px;
 
     margin-bottom:10px;
 
